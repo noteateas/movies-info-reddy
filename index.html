@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reddy Home Page</title>
+	<link rel="stylesheet" type="text/css" href="css/style.min.css"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous"/>
+	<meta charset="utf-8"/>
+	<meta name="description" content="Reddy is a social network for sharing your taste in film. Use it as a diary to record your opinion about films as you watch them, or just to keep track of films ..."/>
+	<meta name="keywords" content="movies,watch movie, write review,film track,watchlist,movie news"/>
+	<meta name="author" content=" Teodora Nedeljković"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="shortcut icon" href="img/favicon.ico"/>
+</head>
+<body>
+	<div id="poster">
+		<div id="header">
+			<div class="wrapper">
+				<div>
+					<a href="index.html"><img src="img/logo.png" alt="logo"></a>
+				</div>
+				<div>
+					<ul id="nav">
+						<li><a href="movies.html">movies</a></li>
+						<li><a href="reviews.html">reviews</a></li>
+						<li><a href="watchlist.html">watchlist</a></li>
+						<li><a href="contact.html">contact</a></li>
+					</ul>
+					<div id="navSmall"><p>MENU</p>
+						<ul>
+							<li><a href="movies.html">movies</a></li>
+							<li><a href="reviews.html">reviews</a></li>
+							<li><a href="watchlist.html">watchlist</a></li>
+							<li><a href="contact.html">contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<ul id="account">
+						
+					</ul>	
+				</div>
+			</div>
+		</div>
+		<div id="posterTitle">
+			<h1>Keep track of every movie ever made.</h1>
+			<div>
+				<a href="#" class="register">Get started - Register now!</a>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="highlights">
+		<div class="wrapper">
+			<h2>WE LET YOU...</h2>
+			<div id="highlightsBlock">
+				<a href="movies.html" class="highlight watched">
+					<span class="icons icon-watched"></span>
+					<p>Track films you've watched.</p>
+				</a>
+				<a href="watchlist.html" class="highlight seen">
+					<span class="icons icon-seen"></span>
+					<p>Save those you want to see.</p>
+				</a>
+				<a href="reviews.html" class="highlight reviewed">
+					<span class="icons icon-reviewed"></span>
+					<p>Tell your friends what's good.</p>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="content">
+		<div class="wrapper">
+			<div id="reviews">
+				<div class="title">
+					<h2>REVIEWS</h2>
+					<p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;popular this week</p>
+				</div>
+				<hr/>
+				<div id="reviewBlock">
+					
+				</div>
+			</div>
+			<div id="topReviewers">
+				<h2>TOP REVIEWERS</h2>
+				<hr/>
+				<div id="topReviewersBlock">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="survey">
+		<div class="wrapper">
+			<div id="surveyBlock">
+				<p>Be a part of our survey <a href='#'>here</a>!</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="news">
+		<div class="wrapper">
+			<div class="title">
+				<p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;RECENT NEWS</p>
+				<hr/>
+			</div>
+			<div id="newsBlock">
+				
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div id="rowFirst">
+			<div>
+				<ul>
+					<li><a href="author.html">Author</a></li>
+					<li><a href="documentation.pdf">Documentation</a></li>
+				</ul>
+			</div>
+			<div id="social">
+				<ul>
+					<li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+				</ul>
+				</div>
+		</div>
+		<div><p>Created by Teodora Nedeljkovic, 2020 &copy;</p></div>
+	</div>
+
+
+	<div id="signInBlock">
+		<div class="formClose close">
+			<span></span>
+			<span></span>
+		</div>
+		<form method="POST" action="#" id="formSignIn">
+			<div><h4>Sign In</h4></div>
+			<div><input type="text" name="usernameSignIn" id="usernameSignIn" placeholder="Username"/></div>
+			<div><input type="password" name="passwordSignIn" id="passwordSignIn" placeholder="Password"/></div>
+			<div class="errorsBlock" id='signInErrorsBlock'>
+				
+			</div>
+			<div><input type="button" name="dugmeSignIn" id="dugmeSignIn" value="Continue"></div>
+		</form>
+	</div>
+	<div id="registerBlock">
+		<div class="formClose close">
+			<span></span>
+			<span></span>
+		</div>
+		<form method="POST" action="#" id="formRegister">
+			<div><h4>Create An Account</h4></div>
+			<div><input type="text" name="fullName" id="fullName" placeholder="Full Name"/></div>
+			<div><input type="text" name="usernameRegister" id="usernameRegister" placeholder="Username"/></div>
+			<div><input type="email" name="emailRegister" id="emailRegister" placeholder="Email"/></div>
+			<div><input type="password" name="passwordRegister" id="passwordRegister" placeholder="Password"/></div>
+			<div><input type="password" name="passwordConfirm" id="passwordConfirm" placeholder="Confirm Password"/></div>
+			
+			<div class="errorsBlock" id='registerErrorsBlock'>
+				
+			</div>
+			<div><input type="button" name="dugmeRegister" id="dugmeRegister" value="Continue"></div>
+		</form>
+	</div>
+
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/main.min.js"></script>
+</body>
+</html>
